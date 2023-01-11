@@ -1,6 +1,5 @@
-import CheckClientClass from "./entities/CheckClientClass";
+import CheckClientClass from './entities/CheckClientClass';
 
-
-const check = new CheckClientClass()
-console.log(check.checkEligibility('Rural'));
-console.log(check.checkEligibility('Comercial'));
+const check = new CheckClientClass();
+console.warn(check.checkEligibility('Rural'));
+console.warn(check.checkEligibility('Comercial'));

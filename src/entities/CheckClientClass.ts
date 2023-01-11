@@ -1,17 +1,16 @@
 import ICheck from '../interfaces/ICheck';
 
 export default class CheckClientClass implements ICheck {
-  private eligibleClasses: string[]
+  private eligibleClasses: string[];
 
-  constructor(){
-    this.eligibleClasses = ['Comercial', 'Residencial', 'Industrial']
+  constructor() {
+    this.eligibleClasses = ['Comercial', 'Residencial', 'Industrial'];
   }
 
   checkEligibility(clientClass: string): boolean {
     if (this.eligibleClasses.includes(clientClass)) {
-      return true
+      return true;
     }
-    return false
+    return false;
   }
-
 }
