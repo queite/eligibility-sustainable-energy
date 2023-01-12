@@ -5,7 +5,7 @@
 <details>
 <summary>main branch</summary>
 
-- Nesta branch foi desenvolvida a lógica de negócio usando POO.
+- Nesta branch foi desenvolvida a lógica de negócio usando POO e TypeScript.
 - Foram realizados testes unitários para cada classe criada.
 - É possível visualizar a cobertura de testes.
 - Para saber como rodar os testes e cobertura veja a seção ``Testes``
