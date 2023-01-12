@@ -13,7 +13,6 @@ export default class CheckMinConsumption implements ICheck {
 
   private consumptionAverage() {
     const sum = this.consumptionHistory.reduce((acc, current) => acc + current);
-    console.log(sum / this.consumptionHistory.length)
     return sum / this.consumptionHistory.length;
   }
 
