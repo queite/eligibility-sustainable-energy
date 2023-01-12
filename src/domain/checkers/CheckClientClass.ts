@@ -1,4 +1,4 @@
-import ICheck from '../interfaces/ICheck';
+import ICheck from '../../interfaces/ICheck';
 
 export default class CheckClientClass implements ICheck {
   private eligibleClasses: string[];

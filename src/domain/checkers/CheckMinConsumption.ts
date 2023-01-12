@@ -1,4 +1,4 @@
-import ICheck from '../interfaces/ICheck';
+import ICheck from '../../interfaces/ICheck';
 
 export default class CheckMinConsumption implements ICheck {
   private minConsuption: Record<string, number> = {

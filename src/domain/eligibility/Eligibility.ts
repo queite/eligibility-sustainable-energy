@@ -1,9 +1,9 @@
 import {
   ClientClass, Ineligibility, Input, TaxClass
-} from '../types';
-import CheckClientClass from './CheckClientClass';
-import CheckMinConsumption from './CheckMinConsumption';
-import CheckTaxClass from './CheckTaxClass';
+} from '../../types';
+import CheckClientClass from '../checkers/CheckClientClass';
+import CheckMinConsumption from '../checkers/CheckMinConsumption';
+import CheckTaxClass from '../checkers/CheckTaxClass';
 
 export default class Eligibility {
   private clientClass: ClientClass;

@@ -1,6 +1,6 @@
-import CheckClientClass from './entities/CheckClientClass';
-import CheckMinConsumption from './entities/CheckMinConsumption';
-import Eligibility from './entities/Eligibility';
+import CheckClientClass from './domain/checkers/CheckClientClass';
+import CheckMinConsumption from './domain/checkers/CheckMinConsumption';
+import Eligibility from './domain/eligibility/Eligibility';
 
 
 const check = new CheckClientClass();

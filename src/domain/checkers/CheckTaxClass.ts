@@ -1,4 +1,4 @@
-import ICheck from '../interfaces/ICheck';
+import ICheck from '../../interfaces/ICheck';
 
 export default class CheckTaxClass implements ICheck {
   private eligibleClasses: string[];
