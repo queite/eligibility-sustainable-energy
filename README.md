@@ -1,6 +1,5 @@
 # Lemon 🍋
 ## Backend Case
-<br>
 
 ### Domain
 <details>
@@ -10,9 +9,8 @@
 - Foram realizados testes unitários para cada classe criada.
 - É possível visualizar a cobertura de testes.
 - Para saber como rodar os testes e cobertura veja a seção ``Testes``
-
 </details>
-<br>
+
 
 ### API
 <details>
