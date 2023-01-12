@@ -1,3 +1,4 @@
+import ICheck from '../../interfaces/ICheck';
 import {
   ClientClass, Ineligibility, Input, TaxClass
 } from '../../types';
@@ -14,11 +15,11 @@ export default class Eligibility {
 
   private connectionType: string;
 
-  private checkClientClass: CheckClientClass;
+  private checkClientClass: ICheck;
 
-  private checkMinConsumption: CheckMinConsumption;
+  private checkMinConsumption: ICheck;
 
-  private checkTaxClass: CheckTaxClass;
+  private checkTaxClass: ICheck;
 
   private ineligibility: Ineligibility;
 

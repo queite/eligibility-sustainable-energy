@@ -1,0 +1,3 @@
+describe('CheckClientClass', () => {
+  it('should')
+})
