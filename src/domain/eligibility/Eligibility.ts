@@ -57,10 +57,3 @@ export default class Eligibility {
     }
   }
 }
-
-// próximos passos
-// 1 - testes e cobertura de testes
-// 2 - README do que está pronto
-// 3 - API para mostrar resultado - nova branch
-// 4 - testes API
-// 5 - Atualizar README
