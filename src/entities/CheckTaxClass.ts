@@ -4,13 +4,13 @@ export default class CheckTaxClass implements ICheck {
   private eligibleClasses: string[];
 
   constructor() {
-    this.eligibleClasses = ['Convencional', 'Branca'];
+    this.eligibleClasses = ['convencional', 'branca'];
   }
 
   checkEligibility(taxClass: string): string | boolean {
     if (this.eligibleClasses.includes(taxClass)) {
-      return 'Modalidade tarifária não aceita';
+      return true;
     }
-    return false;
+    return 'Modalidade tarifária não aceita';
   }
 }

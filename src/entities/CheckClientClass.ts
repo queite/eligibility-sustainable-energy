@@ -4,13 +4,13 @@ export default class CheckClientClass implements ICheck {
   private eligibleClasses: string[];
 
   constructor() {
-    this.eligibleClasses = ['Comercial', 'Residencial', 'Industrial'];
+    this.eligibleClasses = ['comercial', 'residencial', 'industrial'];
   }
 
   checkEligibility(clientClass: string): string | boolean {
     if (this.eligibleClasses.includes(clientClass)) {
-      return 'Classe de consumo não aceita';
+      return true;
     }
-    return false;
+      return 'Classe de consumo não aceita';
   }
 }
