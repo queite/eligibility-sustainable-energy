@@ -1,25 +1,26 @@
 # Lemon 🍋
 ## Backend Case
 
-### Domain
+### 📑Domain
 <details>
-<summary>main branch📑</summary>
+<summary>main branch</summary>
 
 - Nesta branch foi desenvolvida a lógica de negócio usando POO.
 - Foram realizados testes unitários para cada classe criada.
 - É possível visualizar a cobertura de testes.
 - Para saber como rodar os testes e cobertura veja a seção ``Testes``
 </details>
+<br>
 
-
-### API
+### 🔄️API
 <details>
-<summary>api branch🔄️</summary>
+<summary>api branch</summary>
 </details>
+<br>
 
-### Testes
+### ⚗️Testes
 <details>
-<summary>Como rodar os testes⚙️</summary>
+<summary>Como rodar os testes</summary>
 <br>
 
 Clone o repositório:
@@ -43,10 +44,11 @@ npm run test
 npm run test:coverage
 ```
 </details>
+<br>
 
-### Regras de negócio
+### 👌Regras de negócio
 <details>
-<summary>Critérios de Elegibilidade 👌</summary>
+<summary>Critérios de Elegibilidade</summary>
 
 - **Classe de consumo da cliente**
     - Possíveis Valores: Comercial, Residencial, Industrial, Poder Público, e Rural.
