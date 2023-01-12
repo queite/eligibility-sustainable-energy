@@ -1,7 +1,9 @@
 {
   "scripts": {
     "lint": "eslint . --ext .ts",
-    "dev": "npx tsnd src/index.ts"
+    "dev": "npx tsnd src/index.ts",
+    "test": "mocha -r ts-node/register tests/unit/**/*.test.ts --exit -t 60000",
+    "test:coverage": "nyc npm run test"
   },
   "devDependencies": {
     "@types/chai": "^4.3.4",
@@ -12,14 +14,13 @@
     "chai": "^4.3.7",
     "eslint": "^8.31.0",
     "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-import": "^2.26.0",
     "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
     "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0",
     "typescript": "^4.9.4"
-  },
-  "dependencies": {
-    "eslint-config-airbnb-typescript": "^17.0.0"
   }
 }
