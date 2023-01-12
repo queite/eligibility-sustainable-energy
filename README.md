@@ -16,7 +16,6 @@
 <details>
 <summary>api branch🔄️</summary>
 </details>
-<br>
 
 ### Testes
 <details>
@@ -44,7 +43,6 @@ npm run test
 npm run test:coverage
 ```
 </details>
-<br>
 
 ### Regras de negócio
 <details>
@@ -63,4 +61,3 @@ npm run test:coverage
         - Clientes com tipo de conexão Trifásica só são elegíveis caso tenham consumo médio acima de 750 kWh.
 - Para calcular a projeção da **economia anual** de CO2, considere que para serem gerados 1000 kWh no Brasil são emitidos em média 84kg de CO2.
 </details>
-<br>
