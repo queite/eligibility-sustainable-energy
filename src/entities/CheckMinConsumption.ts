@@ -17,9 +17,9 @@ export default class CheckMinConsumption implements ICheck {
     return average / this.consumptionHistory.length;
   }
 
-  checkEligibility(connectType: string): boolean {
+  checkEligibility(connectType: string): string | boolean {
     if (this.consumptionAverage() >= this.minConsuption[connectType]) {
-      return true;
+      return 'Consumo muito baixo para tipo de conexão';
     }
     return false;
   }
