@@ -1,4 +1,4 @@
-export const inelegibleConsumption = [
+export const ineligibleConsumption = [
   78, // mes atual
   160, // mes anterior
   376, // 2 meses atras
@@ -6,7 +6,7 @@ export const inelegibleConsumption = [
   481, // 4 meses atras
 ]
 
-export const elegibleConsumption = [
+export const eligibleConsumption = [
   3878, // mes atual
   9760, // mes anterior
   5976, // 2 meses atras

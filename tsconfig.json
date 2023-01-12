@@ -3,7 +3,6 @@
     "target": "ES2022",
     "module": "commonjs",
     "outDir": "build",
-    "rootDir": "src",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
