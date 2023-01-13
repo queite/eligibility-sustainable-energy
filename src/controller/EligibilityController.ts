@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import Eligibility from "../domain/eligibility/Eligibility";
-import { Input } from "../types";
+import { Input, InputZodSchema } from "../types";
 
 export default class EligibilityController {
   private consumerData: Input
@@ -12,6 +12,10 @@ export default class EligibilityController {
   }
 
   checkEligibility() {
+    const inputValidation = InputZodSchema.safeParse(this.consumerData);
+    if( !inputValidation.success) {
+      return this.res.status(400).json({message: 'Verifique os dados do cliente'})
+    }
     const eligibility = new Eligibility(this.consumerData);
     return this.res.status(201).json(eligibility.checkEligibility())
   }
