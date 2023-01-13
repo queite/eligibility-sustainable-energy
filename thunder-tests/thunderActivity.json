@@ -8,14 +8,9 @@
     "method": "POST",
     "sortNum": 0,
     "created": "2023-01-13T18:31:07.022Z",
-    "modified": "2023-01-13T19:35:45.693Z",
+    "modified": "2023-01-13T19:59:21.649Z",
     "headers": [],
     "params": [],
-    "body": {
-      "type": "json",
-      "raw": "{\n  \"numeroDoDocumento\": \"14041737706\",\n\n  \"classeDeConsumo\": \"comercial\",\n  \"modalidadeTarifaria\": \"convencional\",\n  \"historicoDeConsumo\": [\n    3878,\n    9760,\n    5976,\n    2797, \n    2481,\n    5731,\n    7538,\n    4392,\n    7859, \n    4160\n  ]\n}",
-      "form": []
-    },
     "tests": []
   }
 ]
