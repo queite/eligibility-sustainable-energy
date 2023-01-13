@@ -15,6 +15,86 @@
 ### 🔄️API
 <details>
 <summary>api branch</summary>
+
+- Nesta branch foi implementada uma API simples para entrega do resultado de elegibilidade do cliente.
+- Foram adicionados testes de integração.
+- Para saber como rodar os testes e cobertura veja a seção ``Testes``
+</details>
+<details>
+<summary>Como rodar a aplicação</summary>
+
+Clone o repositório:
+```
+git clone git@github.com:queite/lemon-case.git
+```
+Entre na pasta raiz:
+```
+cd lemon-case
+```
+Instale as depenências:
+```
+npm install
+```
+Acesse a branch api:
+```
+git checkout api
+```
+Rode a aplicação:
+```
+npm run dev
+```
+Teste a rota ``localhost:3000/eligibility`` com Thunder Client (rota e body já disponíveis) ou outra ferramenta de sua preferência.
+
+<br>
+
+<details>
+<summary>Formato do body</summary>
+
+**Cliente elegível**
+```
+{
+  "numeroDoDocumento": "14041737706",
+  "tipoDeConexao": "bifasico",
+  "classeDeConsumo": "comercial",
+  "modalidadeTarifaria": "convencional",
+  "historicoDeConsumo": [
+    3878,
+    9760,
+    5976,
+    2797,
+    2481,
+    5731,
+    7538,
+    4392,
+    7859,
+    4160,
+    6941,
+    4597
+  ]
+}
+```
+**Cliente inelegível**
+```
+{
+  "numeroDoDocumento": "14041737706",
+  "tipoDeConexao": "bifasico",
+  "classeDeConsumo": "rural",
+  "modalidadeTarifaria": "verde",
+  "historicoDeConsumo": [
+    3878,
+    9760,
+    5976,
+    2797,
+    2481,
+    5731,
+    7538,
+    4392,
+    7859,
+    4160
+  ]
+}
+```
+</details>
 </details>
 <br>
 
@@ -37,12 +117,21 @@ npm install
 ```
 **⚗️Rodando apenas testes**:
 ```
-npm run test
+npm test
 ```
 **🧪✅Rodando testes com cobertura**:
 ```
 npm run test:coverage
 ```
+</details>
+<details>
+<summary>Relatório de testes</summary>
+
+**Tests:** <br>
+![tests](./img/tests.png)
+
+**Coverage:** <br>
+![coverage](./img/coverage.png)
 </details>
 <br>
 
