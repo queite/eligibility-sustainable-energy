@@ -1,8 +1,8 @@
 const invalidInput = {
-  "numeroDoDocumento": "14041737706",
-  "classeDeConsumo": "comercial",
-  "modalidadeTarifaria": "convencional",
-  "historicoDeConsumo": [
+  'numeroDoDocumento': '14041737706',
+  'classeDeConsumo': 'comercial',
+  'modalidadeTarifaria': 'convencional',
+  'historicoDeConsumo': [
     3878, // mes atual
     9760, // mes anterior
     5976, // 2 meses atras

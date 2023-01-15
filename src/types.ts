@@ -25,4 +25,6 @@ export const InputZodSchema = z.object({
 
 export type Input = z.infer<typeof InputZodSchema>;
 
-export type Ineligibility = 'Classe de consumo não aceita' | 'Modalidade tarifária não aceita' | 'Consumo muito baixo para tipo de conexão'[];
+export type Ineligibility = 'Classe de consumo não aceita'
+  | 'Modalidade tarifária não aceita'
+  | 'Consumo muito baixo para tipo de conexão'[];
