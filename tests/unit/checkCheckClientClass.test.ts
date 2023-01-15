@@ -1,5 +1,5 @@
-import { expect } from "chai";
-import CheckClientClass from "../../src/domain/checkers/CheckClientClass";
+import { expect } from 'chai';
+import CheckClientClass from '../../src/domain/checkers/CheckClientClass';
 
 describe('CheckClientClass', () => {
   it('should return true if elegible', () => {

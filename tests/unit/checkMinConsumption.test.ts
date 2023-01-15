@@ -1,6 +1,6 @@
-import { expect } from "chai";
-import CheckMinConsumption from "../../src/domain/checkers/CheckMinConsumption";
-import { eligibleConsumption, ineligibleConsumption } from "../mocks/checkersMocks";
+import { expect } from 'chai';
+import CheckMinConsumption from '../../src/domain/checkers/CheckMinConsumption';
+import { eligibleConsumption, ineligibleConsumption } from '../mocks/checkersMocks';
 
 describe('CheckMinConsumptionClass', () => {
   it('should return true if elegible', () => {
@@ -10,6 +10,7 @@ describe('CheckMinConsumptionClass', () => {
 
   it('should return "Consumo muito baixo para tipo de conexão" if inelegible', () => {
     const checkMinConsumptionClass = new CheckMinConsumption(ineligibleConsumption);
-    expect(checkMinConsumptionClass.checkEligibility('monofasico')).to.be.eq('Consumo muito baixo para tipo de conexão');
+    expect(checkMinConsumptionClass.checkEligibility('monofasico'))
+      .to.be.eq('Consumo muito baixo para tipo de conexão');
   });
 });
