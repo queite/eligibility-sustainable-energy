@@ -13,9 +13,14 @@ export default class EligibilityController {
 
   checkEligibility() {
     const inputValidation = InputZodSchema.safeParse(this.consumerData);
-    if( !this.consumerData || !inputValidation.success) {
-      return this.res.status(400).json({message: 'Verifique os dados do cliente'})
+
+    if( !inputValidation.success) {
+      return this.res.status(400).json({
+        field: inputValidation.error.issues[0].path,
+        message: inputValidation.error.issues[0].message
+      })
     }
+
     const eligibility = new Eligibility(this.consumerData);
     return this.res.status(201).json(eligibility.checkEligibility())
   }

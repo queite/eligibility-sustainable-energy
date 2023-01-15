@@ -12,18 +12,16 @@ export const InputZodSchema = z.object({
     'monofasico',
     'bifasico',
     'trifasico'].includes(val as string)),
-  classeDeConsumo: z.custom<`${ClientClass}`>((val) => [
+  classeDeConsumo: z.enum([
     'residencial',
     'industrial',
     'comercial',
     'rural',
-    'poderPublico'].includes(val as string)),
-  modalidadeTarifaria: z.custom<`${TaxClass}`>((val) => ['azul',
-    'branca',
-    'verde',
-    'convencional'].includes(val as string)),
-  historicoDeConsumo: z.number().array()
-})
+    'poderPublico']),
+  modalidadeTarifaria: z.enum(
+    ['azul', 'branca', 'verde', 'convencional']),
+  historicoDeConsumo: z.number().array().min(3).max(12)
+});
 
 export type Input = z.infer<typeof InputZodSchema>;
 
