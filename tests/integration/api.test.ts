@@ -1,7 +1,7 @@
 import chai from 'chai';
 import chaiHttp from 'chai-http';
 import app from '../../src/app';
-import invalidInput from '../mocks/apiMocks';
+import { invalidCNPJ, invalidInput } from '../mocks/apiMocks';
 import { eligibleClient, ineligibleClient } from '../mocks/eligibilitiMocks';
 
 chai.use(chaiHttp);
@@ -31,5 +31,11 @@ describe('api', () => {
     const response = await chai.request(app).post('/eligibility').send(invalidInput);
     expect(response.status).to.be.eq(400);
     expect(response.body).to.have.property('message');
+  });
+
+  it('should return status 400 and the message "CNPJ/CPF inválido"', async () => {
+    const response = await chai.request(app).post('/eligibility').send(invalidCNPJ);
+    expect(response.status).to.be.eq(400);
+    expect(response.body).to.deep.include({message: 'CNPJ/CPF inválido'})
   });
 });
