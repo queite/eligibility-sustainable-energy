@@ -3,6 +3,7 @@ import {
   ClientClass, Ineligibility, Input, TaxClass
 } from '../../types';
 import CheckClientClass from '../checkers/CheckClientClass';
+import CheckClientSubclass from '../checkers/CheckClientSubclass';
 import CheckMinConsumption from '../checkers/CheckMinConsumption';
 import CheckTaxClass from '../checkers/CheckTaxClass';
 
@@ -23,14 +24,20 @@ export default class Eligibility {
 
   private ineligibility: Ineligibility;
 
+  private checkClientSubclass: CheckClientSubclass;
+
+  private clientSubclass: string;
+
   constructor(clientData: Input) {
     this.clientClass = clientData.classeDeConsumo;
+    this.clientSubclass = clientData.subclassesDeConsumo;
     this.consumptionHistory = clientData.historicoDeConsumo;
     this.taxClass = clientData.modalidadeTarifaria;
     this.connectionType = clientData.tipoDeConexao;
     this.checkClientClass = new CheckClientClass();
     this.checkMinConsumption = new CheckMinConsumption(this.consumptionHistory);
     this.checkTaxClass = new CheckTaxClass();
+    this.checkClientSubclass = new CheckClientSubclass();
     this.ineligibility = [];
   };
 
@@ -48,6 +55,7 @@ export default class Eligibility {
     const checkResults = [
       this.checkClientClass.checkEligibility(this.clientClass),
       this.checkMinConsumption.checkEligibility(this.connectionType),
+      ...this.checkClientSubclass.checkEligibility(this.clientClass, this.clientSubclass),
       this.checkTaxClass.checkEligibility(this.taxClass)
     ];
     this.ineligibility = checkResults.filter((result) => result !== true) as Ineligibility;

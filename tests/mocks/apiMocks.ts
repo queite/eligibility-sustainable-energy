@@ -1,6 +1,7 @@
 export const invalidInput = {
   'numeroDoDocumento': '83295720053',
   'classeDeConsumo': 'Rural',
+  'subclassesDeConsumo': 'agropecuariaRural',
   'modalidadeTarifaria': 'convencional',
   'historicoDeConsumo': [
     3878, // mes atual
@@ -21,6 +22,7 @@ export const invalidInput = {
 export const invalidCNPJ = {
   'numeroDoDocumento': '10771772000080',
   'classeDeConsumo': 'comercial',
+  'subclassesDeConsumo': 'comercial',
   'modalidadeTarifaria': 'convencional',
   'historicoDeConsumo': [
     3878, // mes atual

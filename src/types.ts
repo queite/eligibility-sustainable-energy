@@ -23,6 +23,19 @@ export const InputZodSchema = z.object({
     'comercial',
     'rural',
     'poderPublico']),
+  subclassesDeConsumo: z.enum([
+  'administracaoCondominial',
+  'agropecuariaRural',
+  'baixaRenda',
+  'comercial',
+  'industrial',
+  'poderPublicoEstadual',
+  'poderPublicoMunicipal',
+  'residencial',
+  'servicosDeTelecomunicacao',
+  'servicosDeTransporte',
+  'templosReligiosos',
+  ]),
   modalidadeTarifaria: z.enum(
     ['azul', 'branca', 'verde', 'convencional']),
   historicoDeConsumo: z.number().array().min(3).max(12)

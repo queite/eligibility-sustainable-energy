@@ -1,9 +1,10 @@
 import { Input } from '../../src/types';
 
 export const eligibleClient: Input = {
-  'numeroDoDocumento': '14041737706',
+  'numeroDoDocumento': '83295720053',
   'tipoDeConexao': 'bifasico',
   'classeDeConsumo': 'comercial',
+  'subclassesDeConsumo': 'comercial',
   'modalidadeTarifaria': 'convencional',
   'historicoDeConsumo': [
     3878, // mes atual
@@ -22,9 +23,10 @@ export const eligibleClient: Input = {
 };
 
 export const ineligibleClient: Input = {
-  'numeroDoDocumento': '14041737706',
+  'numeroDoDocumento': '83295720053',
   'tipoDeConexao': 'bifasico',
   'classeDeConsumo': 'rural',
+  'subclassesDeConsumo': 'agropecuariaRural',
   'modalidadeTarifaria': 'verde',
   'historicoDeConsumo': [
     3878, // mes atual
@@ -41,9 +43,10 @@ export const ineligibleClient: Input = {
 };
 
 export const eligibleClientWithLessConsumptionRegister: Input = {
-  'numeroDoDocumento': '14041737706',
+  'numeroDoDocumento': '83295720053',
   'tipoDeConexao': 'bifasico',
   'classeDeConsumo': 'comercial',
+  'subclassesDeConsumo': 'comercial',
   'modalidadeTarifaria': 'convencional',
   'historicoDeConsumo': [
     3878, // mes atual
