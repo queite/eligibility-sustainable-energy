@@ -1,3 +1,4 @@
+import { cnpj, cpf } from 'cpf-cnpj-validator';
 import { z } from 'zod';
 
 export type ConnectionType = 'monofasico' | 'bifasico' | 'trifasico';
@@ -7,7 +8,11 @@ export type ClientClass = 'residencial' | 'industrial' | 'comercial' | 'rural' |
 export type TaxClass = 'azul' | 'branca' | 'verde' | 'convencional';
 
 export const InputZodSchema = z.object({
-  numeroDoDocumento: z.string(),
+  numeroDoDocumento:z.string().refine((val) => (val.length === 11 && cpf.isValid(val))
+  || (val.length === 14 && cnpj.isValid(val))
+  , {
+    message: 'CNPJ/CPF inválido',
+  }),
   tipoDeConexao: z.custom<`${ConnectionType}`>((val) => [
     'monofasico',
     'bifasico',
