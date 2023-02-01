@@ -37,10 +37,7 @@ export default class Eligibility {
     this.checkClientClass = new CheckClientClass();
     this.checkMinConsumption = new CheckMinConsumption(this.consumptionHistory);
     this.checkTaxClass = new CheckTaxClass();
-<<<<<<< HEAD
-=======
     this.checkClientSubclass = new CheckClientSubclass();
->>>>>>> api
     this.ineligibility = [];
   };
 
