@@ -1,25 +1,18 @@
 # Lemon 🍋
 ## Backend Case
 
-### 📑Domain
 <details>
-<summary>main branch</summary>
+<summary>Solução</summary>
 
-- Nesta branch foi desenvolvida a lógica de negócio usando POO e TypeScript.
-- Foram realizados testes unitários para cada classe criada.
+- A lógica de negócio desenvolvida usando POO e TypeScript.
+- Realizados testes unitários para cada classe criada.
+- Implementada API simples para entrega do resultado de elegibilidade do cliente.
+- Adicionados testes de integração.
 - É possível visualizar a cobertura de testes.
 - Para saber como rodar os testes e cobertura veja a seção ``Testes``
 </details>
 <br>
 
-### 🔄️API
-<details>
-<summary>api branch</summary>
-
-- Nesta branch foi implementada uma API simples para entrega do resultado de elegibilidade do cliente.
-- Foram adicionados testes de integração.
-- Para saber como rodar os testes e cobertura veja a seção ``Testes``
-</details>
 <details>
 <summary>Como rodar a aplicação</summary>
 
@@ -139,7 +132,7 @@ npm run test:coverage
 <details>
 <summary>Critérios de Elegibilidade</summary>
 
-- **Classe de consumo da cliente**
+- **Classe de consumo do cliente**
     - Possíveis Valores: Comercial, Residencial, Industrial, Poder Público, e Rural.
     - Elegíveis: Comercial, Residencial e Industrial.
 - **Modalidade tarifária**
@@ -151,4 +144,30 @@ npm run test:coverage
         - Clientes com tipo de conexão Bifásica só são elegíveis caso tenham consumo médio acima de 500 kWh.
         - Clientes com tipo de conexão Trifásica só são elegíveis caso tenham consumo médio acima de 750 kWh.
 - Para calcular a projeção da economia anual de CO2, considere que para serem gerados 1000 kWh no Brasil são emitidos em média 84kg de CO2.
+- **Subclasse de consumo do cliente**
+    - Comercial
+        - Elegíveis
+            - Administração Condominal
+            - Comercial
+            - Serviços de Telecomunicação
+        - Não elegíveis
+            - Templos Religiosos
+    - Industrial
+        - Elegíveis
+            - Industrial
+        - Não elegíveis
+    - Residencial
+        - Elegíveis
+            - Residencial
+        - Não elegíveis
+            - Baixa renda
+    - Poder Público
+        - Elegíveis
+        - Não elegíveis
+            - Poder público estadual
+            - Poder público municipal
+    - Rural
+        - Elegíveis
+        - Não elegíveis
+            - Agropecuária rural
 </details>
