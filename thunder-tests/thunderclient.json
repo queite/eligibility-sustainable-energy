@@ -1,0 +1,21 @@
+[
+  {
+    "_id": "f2a594ea-6e05-4a8c-8e5f-010d711fbc79",
+    "colId": "9211b41d-8dab-4865-ae99-df06e7e3f2dd",
+    "containerId": "",
+    "name": "http://localhost:3000/eligibility",
+    "url": "http://localhost:3000/eligibility",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-01-15T10:09:41.652Z",
+    "modified": "2023-01-25T16:34:22.523Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"numeroDoDocumento\": \"88352147000191\",\n  \"tipoDeConexao\": \"bifasico\",\n  \"classeDeConsumo\": \"comercial\",\n  \"subclassesDeConsumo\": \"poderPublicoEstadual\",\n  \"modalidadeTarifaria\": \"convencional\",\n  \"historicoDeConsumo\": [\n    3878,\n    9760,\n    5976,\n    2797,\n    2481,\n    5731,\n    7538,\n    4392,\n    7859,\n    4160,\n    6941,\n    4597\n  ]\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]

@@ -1,9 +1,16 @@
 import { Input } from '../../src/types';
 
 export const eligibleClient: Input = {
+<<<<<<< HEAD
   'numeroDoDocumento': '14041737706',
   'tipoDeConexao': 'bifasico',
   'classeDeConsumo': 'comercial',
+=======
+  'numeroDoDocumento': '83295720053',
+  'tipoDeConexao': 'bifasico',
+  'classeDeConsumo': 'comercial',
+  'subclassesDeConsumo': 'comercial',
+>>>>>>> api
   'modalidadeTarifaria': 'convencional',
   'historicoDeConsumo': [
     3878, // mes atual
@@ -22,9 +29,16 @@ export const eligibleClient: Input = {
 };
 
 export const ineligibleClient: Input = {
+<<<<<<< HEAD
   'numeroDoDocumento': '14041737706',
   'tipoDeConexao': 'bifasico',
   'classeDeConsumo': 'rural',
+=======
+  'numeroDoDocumento': '83295720053',
+  'tipoDeConexao': 'bifasico',
+  'classeDeConsumo': 'rural',
+  'subclassesDeConsumo': 'agropecuariaRural',
+>>>>>>> api
   'modalidadeTarifaria': 'verde',
   'historicoDeConsumo': [
     3878, // mes atual
@@ -41,9 +55,16 @@ export const ineligibleClient: Input = {
 };
 
 export const eligibleClientWithLessConsumptionRegister: Input = {
+<<<<<<< HEAD
   'numeroDoDocumento': '14041737706',
   'tipoDeConexao': 'bifasico',
   'classeDeConsumo': 'comercial',
+=======
+  'numeroDoDocumento': '83295720053',
+  'tipoDeConexao': 'bifasico',
+  'classeDeConsumo': 'comercial',
+  'subclassesDeConsumo': 'comercial',
+>>>>>>> api
   'modalidadeTarifaria': 'convencional',
   'historicoDeConsumo': [
     3878, // mes atual

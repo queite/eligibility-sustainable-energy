@@ -127,11 +127,11 @@ npm run test:coverage
 <details>
 <summary>Relatório de testes</summary>
 
-**Tests:** <br>
-![tests](./img/tests.png)
+**API tests:** <br>
+![API tests](./img/testAPI.png)
 
-**Coverage:** <br>
-![coverage](./img/coverage.png)
+**API coverage:** <br>
+![API coverage](./img/coverageAPI.png)
 </details>
 <br>
 
@@ -150,5 +150,5 @@ npm run test:coverage
         - Clientes com tipo de conexão Monofásica só são elegíveis caso tenham consumo médio acima de 400 kWh.
         - Clientes com tipo de conexão Bifásica só são elegíveis caso tenham consumo médio acima de 500 kWh.
         - Clientes com tipo de conexão Trifásica só são elegíveis caso tenham consumo médio acima de 750 kWh.
-- Para calcular a projeção da **economia anual** de CO2, considere que para serem gerados 1000 kWh no Brasil são emitidos em média 84kg de CO2.
+- Para calcular a projeção da economia anual de CO2, considere que para serem gerados 1000 kWh no Brasil são emitidos em média 84kg de CO2.
 </details>
