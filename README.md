@@ -1,4 +1,4 @@
-## Backend Case - Elegibilidade de clientes para energia sustentável
+## Backend - Elegibilidade de clientes para energia sustentável
 
 <details>
 <summary>Solução</summary>
@@ -17,11 +17,11 @@
 
 Clone o repositório:
 ```
-git clone git@github.com:queite/lemon-case.git
+git clone git@github.com:queite/eligibility-sustainable-energy.git
 ```
 Entre na pasta raiz:
 ```
-cd lemon-case
+cd eligibility-sustainable-energy
 ```
 Instale as depenências:
 ```
