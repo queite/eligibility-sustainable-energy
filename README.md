@@ -1,10 +1,9 @@
-# Lemon 🍋
-## Backend Case
+## Backend Case - Elegibilidade de clientes para energia sustentável
 
 <details>
 <summary>Solução</summary>
 
-- A lógica de negócio desenvolvida usando POO e TypeScript.
+- Lógica de negócio desenvolvida usando POO e TypeScript.
 - Realizados testes unitários para cada classe criada.
 - Implementada API simples para entrega do resultado de elegibilidade do cliente.
 - Adicionados testes de integração.
