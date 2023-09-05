@@ -97,11 +97,11 @@ Teste a rota ``localhost:3000/eligibility`` com Thunder Client (rota e body já 
 
 Clone o repositório:
 ```
-git clone git@github.com:queite/lemon-case.git
+git clone git@github.com:queite/eligibility-sustainable-energy.git
 ```
 Entre na pasta raiz:
 ```
-cd lemon-case
+cd eligibility-sustainable-energy
 ```
 Instale as depenências:
 ```
